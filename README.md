@@ -49,6 +49,19 @@ An enterprise-grade, modern, AI-powered Smart Canteen Management Platform design
 
 ---
 
+## 🟢 NVIDIA Nemotron, Nebius Token Factory & Accelerated AI Integration
+
+MealPe leverages open-source **NVIDIA models** and **Nebius AI Studio** infrastructure to power its intelligent campus dining operations:
+
+- **NVIDIA Nemotron (`nvidia/Llama-3.1-Nemotron-70B-Instruct`):**
+  - **Context-Aware Dining Assistant:** Powers the conversational chatbot agent (`ai/chatbot.py`), understanding natural language budget constraints (e.g., *"Suggest a filling lunch under ₹80"*), live order tracking, and dietary filtering.
+  - **Explainable AI (XAI) for Kitchen Staff:** Translates multi-variate Random Forest demand forecasts and crowd footfall predictions into plain-English operational guidance (e.g., *"Friday lunch surge: prepare 25 extra meal portions due to 42 advance seat bookings"*).
+- **Nebius Token Factory & AI Studio Infrastructure:**
+  - **Accelerated Token Generation:** Nebius Token Factory powers the LLM inference pipeline with OpenAI-compatible API endpoints, providing ultra-low-latency responses and high token throughput during peak campus rush hours.
+  - **Aspect-Based Sentiment Synthesis:** Summarizes student culinary feedback across 7 operational dimensions (*Taste, Price, Waiting Time, Quality, Cleanliness, Service, Quantity*).
+
+---
+
 ## 🛠️ Technology Stack
 
 - **Backend:** Python 3.9+, Flask 3.0.3, Flask-SocketIO (Modular Blueprints: `auth`, `student`, `admin`, `staff`, `api`)
@@ -242,8 +255,6 @@ python test_app.py
 
 ---
 
-## 📜 Copyright & License
+## 📜 License
 
-Copyright © 2026 Pranav Kokande. All rights reserved.
-
-This project and its source code are proprietary. No permission is granted to copy, modify, distribute, publish, or use this project or its source code without prior written permission from the author.
+This project is licensed under the **MIT License** (OSI Approved) - see the [LICENSE](LICENSE) file for details.
